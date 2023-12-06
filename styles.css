@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    width: 80%;
+    height: 100vh;
+    background-color: aliceblue;
+    background-image: url("https://i.natgeofe.com/n/135b255f-f37f-4b23-b0c3-2f0a4c1aa065/1106.jpg?w=795&h=596.25");
+    background-size: cover;
+    background-position: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid linen; */
+    margin: auto;
+}
+
+a {
+    position: absolute;
+    left: 90%;
+    top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px red;
+}
+.main p {
+    font-size: 0.8rem;
+    margin-top: 16px;
+    color: lightblue;
+}
+
+.load {
+    background-color: #999;
+    width: 100%;
+    height: 24px;
+}
+
+
+.load .loadactual {
+    background-color: red;
+    width: 100%;
+    min-height: 24px;
+    position: relative;
+    animation-name: load100;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes load100 {
+    0% {width: 0%;}
+    100% {width: 90%;}
+}
+
+.loadpercent {
+    display: flex;
+    justify-content: space-between;
+    color: lightblue;
+}
+
+input {
+    background-color: lightblue;
+    padding: 4px 16px;
+    border: none;
+}
+.contact {
+    margin-top: 24px;
+    
+}
+.contact a {
+    position: inherit;
+}
+.contact img {
+    width: 48px;
+    margin: 0 16px;
+}
